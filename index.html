@@ -32,6 +32,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script type="text/javascript" language="javascript" src="js/Kirjaudu.js"></script>
 
 </head>
 <body id="page-top" class="politics_version">
@@ -68,9 +69,12 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#gallery"><span>Gallery</span></a>
             </li>
-			<form>
+			<form id="Kirjautumis_lomake">
 				<input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
 				<input id="kirjaudu_nappi" type="submit" value="Kirjaudu sisään" onclick="kirjaudu()" />
+			</form>
+			<form id="kirjaudu_ulos">
+				<input id="nappi" type="submit" value="kirjaudu ulos" onclick="kirjaudu_ulos()"/>
 			</form>
           </ul>
         </div>
