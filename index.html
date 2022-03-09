@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">	
  
      <!-- Site Metas -->
-    <title>Ryhmä f pizza</title>  
+    <title>Ryhmä F Pizzeria</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -32,6 +32,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script type="text/javascript" language="javascript" src="js/Kirjaudu.js"></script>
 
 </head>
 <body id="page-top" class="politics_version">
@@ -48,7 +49,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container-fluid">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-			<img class="img-fluid" src="images/logo.png" alt="" />
+			<img class="img-fluid" src="images/logoF.png" alt="" />
 		</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
@@ -68,18 +69,13 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#gallery"><span>Gallery</span></a>
             </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#chef"><span>Chef</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#pricing"><span>Pricing</span></a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#blog"><span>Blog</span></a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact"><span>Contect Us</span></a>
-            </li>
+			<form id="Kirjautumis_lomake">
+				<input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
+				<input id="kirjaudu_nappi" type="submit" value="Kirjaudu sisään" onclick="kirjaudu()" />
+			</form>
+			<form id="kirjaudu_ulos">
+				<input id="nappi" type="submit" value="kirjaudu ulos" onclick="kirjaudu_ulos()"/>
+			</form>
           </ul>
         </div>
       </div>
@@ -145,15 +141,20 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">                        
-                        <h2>Tervetuloa Ryhmä f pizzerian.</h2>
-                        <p></p>
-						<p></p>
-						<ul>
-							<li>Myymme laatu pizzaa.</li>
-							<li>Olemme suomen top 1 pizzeria.</li>
-							<li>Meillä on Suomessa tällä hetkellä 50 pizzeriaa.</li>
-						</ul>
-                        <a href="#foot" class="sim-btn hvr-radial-in js-scroll-trigger"><span>Meidän yhteistiedot</span></a>
+                      <h2>Tervetuloa ryhmä F pizzeriaan</h2>
+                       <p> Olemme pizzeria joka alkoi koulu projektin takia. Meillä kaikki pizza taikinat on tehty käsin. Käytämme vain hyvä laatuisia tuotteita pizzoissamme.</p>
+						            <p>Vaikka olemme pieni pizzeria voin taata pizzojemme maun</p>
+						              <ul>
+                            <li>Työn tekijöidemme määrä on 4.</li>
+                            <li>Nimemme tulee ryhmän nimestä</li>
+                            <li>Myymme kahdeksaa eri pitsaa</li>
+                            <li>käytämme vain suomessa tuotettuja raaka-aineita</li>
+                            <li>Pizzojen tekoon käytämme oonia</li>
+                            <li>Myymme laatu pizzaa.</li>
+                            <li>Olemme suomen top 1 pizzeria.</li>
+                            <li>Meillä on Suomessa tällä hetkellä 50 pizzeriaa.</li>
+						               </ul>
+                     <a href="#foot" class="sim-btn hvr-radial-in js-scroll-trigger"><span>Meidän yhteistiedot</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -173,28 +174,28 @@
 					<div class="inner-cont-box">
 						<i class="flaticon-review"></i>
 						<h3 class="counter-number">5000</h3>
-						<h4>Client</h4>
+						<h4>Asiakkaat</h4>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6 col-xs-12">
 					<div class="inner-cont-box">
 						<i class="flaticon-alarm-clock"></i>
 						<h3 class="counter-number">3000</h3>
-						<h4>Time Of Work</h4>
+						<h4>Työn aika</h4>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6 col-xs-12">
 					<div class="inner-cont-box">
 						<i class="flaticon-idea"></i>
 						<h3 class="counter-number">2000</h3>
-						<h4>Ideas</h4>
+						<h4>Ideoita</h4>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6 col-xs-12">
 					<div class="inner-cont-box">
 						<i class="flaticon-projector-screen"></i>
 						<h3 class="counter-number">8000</h3>
-						<h4>Project Done</h4>
+						<h4>Projekteja tehty</h4>
 					</div>
 				</div>
 			</div>
@@ -405,7 +406,7 @@
 				<div class="col-lg-3 col-md-6 col-sm-12">
 					<div class="mb-3 img-logo">
 						<a href="#">
-							 <img src="images/logo.png" alt="">
+							 <img src="images/logoF.png" alt="">
 						</a>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
