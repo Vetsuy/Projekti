@@ -32,6 +32,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script type="text/javascript" language="javascript" src="js/Kirjaudu.js"></script>
 
 </head>
 <body id="page-top" class="politics_version">
@@ -68,18 +69,13 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#gallery"><span>Gallery</span></a>
             </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#chef"><span>Chef</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#pricing"><span>Pricing</span></a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#blog"><span>Blog</span></a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact"><span>Contect Us</span></a>
-            </li>
+			<form id="Kirjautumis_lomake">
+				<input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
+				<input id="kirjaudu_nappi" type="submit" value="Kirjaudu sisään" onclick="kirjaudu()" />
+			</form>
+			<form id="kirjaudu_ulos">
+				<input id="nappi" type="submit" value="kirjaudu ulos" onclick="kirjaudu_ulos()"/>
+			</form>
           </ul>
         </div>
       </div>
@@ -145,18 +141,16 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">                        
-                        <h2>Welcome to Green Special Restaurant.</h2>
-                        <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, eu bibendum risus. Phasellus et congue justo. </p>
-						<p>Sed vitae rutrum neque. Ut id erat sit amet libero bibendum aliquam. Donec ac egestas libero, 
-						   eu bibendum risus. Phasellus et congue justo.</p>
+                        <h2>Tervetuloa ryhmä F pizzeriaan</h2>
+                        <p> Olemme pizzeria joka alkoi koulu projektin takia. Meillä kaikki pizza taikinat on tehty käsin. Käytämme vain hyvä laatuisia tuotteita pizzoissamme.</p>
+						<p>Vaikka olemme pieni pizzeria voin taata pizzojemme maun</p>
 						<ul>
-							<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-							<li>Nullam ut massa id odio imperdiet consequat.</li>
-							<li>Cras ullamcorper nisi eget condimentum aliquet. </li>
-							<li>Cras id libero iaculis, sodales ligula vitae, egestas odio.</li>
-							<li>Aenean congue ex et bibendum porta.</li>
+							<li>Työn tekijöidemme määrä on 4.</li>
+							<li>Nimemme tulee ryhmän nimestä</li>
+							<li>Myymme kahdeksaa eri pitsaa</li>
+							<li>käytämme vain suomessa tuotettuja raaka-aineita</li>
+							<li>Pizzojen tekoon käytämme oonia</li>
 						</ul>
-                        <a href="#" class="sim-btn hvr-radial-in"><span>Contact Us</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -176,28 +170,28 @@
 					<div class="inner-cont-box">
 						<i class="flaticon-review"></i>
 						<h3 class="counter-number">5000</h3>
-						<h4>Client</h4>
+						<h4>Asiakkaat</h4>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6 col-xs-12">
 					<div class="inner-cont-box">
 						<i class="flaticon-alarm-clock"></i>
 						<h3 class="counter-number">3000</h3>
-						<h4>Time Of Work</h4>
+						<h4>Työn aika</h4>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6 col-xs-12">
 					<div class="inner-cont-box">
 						<i class="flaticon-idea"></i>
 						<h3 class="counter-number">2000</h3>
-						<h4>Ideas</h4>
+						<h4>Ideoita</h4>
 					</div>
 				</div>
 				<div class="col-lg-3 col-sm-6 col-xs-12">
 					<div class="inner-cont-box">
 						<i class="flaticon-projector-screen"></i>
 						<h3 class="counter-number">8000</h3>
-						<h4>Project Done</h4>
+						<h4>Projekteja tehty</h4>
 					</div>
 				</div>
 			</div>
