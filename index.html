@@ -69,9 +69,33 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#gallery"><span>Gallery</span></a>
             </li>
-			<form id="Kirjautumis_lomake">
+			<li id="käyttäjä_nimi">
+				<p id="nn"> </p>
+			</li>
+			<form id="reikisteröidy">
+				<input id="rekisteröiöidy_nappi" type="submit" value="Rekisteröidy" onclick="rekisteröidy()">
+			</form>
+			<form id="rekisteri">
+				<input id="nimi1" type="text" placeholder="Syötä nimesi" value="" />
+				<input id="salasa" type="text" placeholder="Syötä salasana" value="" />
+				<input id="submit" type="submit" value="Rekisteröidy" onclick="rekisteröidy2()"/>
+				<input id="takaisin" type="submit" value="Takaisin" onclick="taka()">
+				
+			</form>
+			
+			<form id="er">
+				<p id="ero">Nimi on jo käytössä</p>
+			</form>
+			<form id="Kirjautumis_nappi">
+				<input id="kirjaudu_nappi" type="submit" value="kirjaudu sisään" onclick="kirjaudu()" />
+			</form>
+			<form id="kirjaudu_lomake">
 				<input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
-				<input id="kirjaudu_nappi" type="submit" value="Kirjaudu sisään" onclick="kirjaudu()" />
+				<input id="salasana" type="text" placeholder="Syötä salasana" value="" />
+				<input id="kirjaudu_nappi" type="submit" value="kirjaudu sisään" onclick="kirja()" />
+				<input id="takaisin" type="submit" value="Takaisin" onclick="taka()">
+				<p id="vaara">Salasana tai nimi väärin</p>
+			</form>
 			</form>
 			<form id="kirjaudu_ulos">
 				<input id="nappi" type="submit" value="kirjaudu ulos" onclick="kirjaudu_ulos()"/>
