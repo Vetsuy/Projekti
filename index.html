@@ -69,9 +69,34 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#gallery"><span>Galleria</span></a>
             </li>
-			<form id="Kirjautumis_lomake">
+			<li id="käyttäjä_nimi">
+				<p id="nn"> </p>
+			</li>
+			<form id="reikisteröidy">
+				<input id="rekisteröiöidy_nappi" type="submit" value="Rekisteröidy" onclick="rekisteröidy()">
+			</form>
+			<form id="rekisteri">
+				<input id="nimi1" type="text" placeholder="Syötä nimesi" value="" />
+				<input id="salasa" type="text" placeholder="Syötä salasana" value="" />
+				<input id="submit" type="submit" value="Rekisteröidy" onclick="rekisteröidy2()"/>
+				<input id="takaisin" type="submit" value="Takaisin" onclick="taka()">
+				
+			</form>
+			
+			<form id="er">
+				<p id="ero">Nimi on jo käytössä</p>
+				<p id="eros">Ei salasanaa</p>
+			</form>
+			<form id="Kirjautumis_nappi">
+				<input id="kirjaudu_nappi" type="submit" value="kirjaudu sisään" onclick="kirjaudu()" />
+			</form>
+			<form id="kirjaudu_lomake">
 				<input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
-				<input id="kirjaudu_nappi" type="submit" value="Kirjaudu sisään" onclick="kirjaudu()" />
+				<input id="salasana" type="text" placeholder="Syötä salasana" value="" />
+				<input id="kirjaudu_nappi" type="submit" value="kirjaudu sisään" onclick="kirja()" />
+				<input id="takaisin" type="submit" value="Takaisin" onclick="taka()">
+				<p id="vaara">Salasana tai nimi väärin</p>
+			</form>
 			</form>
 			<form id="kirjaudu_ulos">
 				<input id="nappi" type="submit" value="kirjaudu ulos" onclick="kirjaudu_ulos()"/>
@@ -400,7 +425,7 @@
 		</div>
 	</div>
 	
-	<footer id="foot" class="main-footer">
+	<!--<footer id="foot" class="main-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3 col-md-6 col-sm-12">
@@ -413,18 +438,18 @@
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12">
 					<h4 class="mb-4 ph-fonts-style foot-title">
-						Recent Link
+						recent link poistin ei tee mitään 
 					</h4>
 					<ul class="ph-links-column">
-						<li><a href="#" class="text-black">Tietoa meistä</a></li>
-						<li><a href="#" class="text-black">Palvelut</a></li>
-						<li><a href="#" class="text-black">Ota yhteyttä</a></li>
-						<li><a href="#" class="text-black">Työt</a></li>
+						<li><a href="#" class="text-black">ennen luki: Tietoa meistä </a></li>
+						<li><a href="#" class="text-black">ennen luki: Palvelut</a></li>
+						<li><a href="#" class="text-black">ennen luki: Ota Yhteyttä</a></li>
+						<li><a href="#" class="text-black">ennen luki: Työt</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-3 col-md-6 col-sm-12">
 					<h4 class="mb-4 ph-fonts-style foot-title">
-						Ota yhteyttä
+						Ota yhteyttä poistin ei tee mitään
 					</h4>
 					<div class="cont-box-footer">
 						<div class="cont-line">
@@ -432,7 +457,7 @@
 								<i class="fa fa-map-signs" aria-hidden="true"></i>
 							</div>
 							<div class="cont-dit">
-								<p>9236 Winding Way St. Richardson, TX 75080</p>
+								<p>ennen luki: 9236 Winding Way St. Richardson, TX 75080</p>
 							</div>
 						</div>
 						<div class="cont-line">
@@ -481,20 +506,20 @@
 				</div>
 			</div>
 		</div>
-	</footer>
+	</footer>-->
 
     <div class="copyrights">
         <div class="container-fluid">
             <div class="footer-distributed">
                 <div class="footer-left">
-                    <p class="footer-links">
+                    <!--<p class="footer-links">
                         <a href="#">Koti</a>
                         <a href="#">Blogi</a>
                         <a href="#">Hinnat</a>
                         <a href="#">Tietoa</a>
                         <a href="#">Faq</a>
                         <a href="#">Contact</a>
-                    </p>
+                    </p>-->
                     <p class="footer-company-name">Kaikki oikeudet pidätetään. &copy; 2022 <a href="#">Ryhmä F Pizzeria</a> Suunnitellut : 
 					<a href="https://html.design/">Keuda Pojat</a></p>
                 </div>
