@@ -61,13 +61,13 @@
               <a class="nav-link js-scroll-trigger active" href="#home"><span>Koti</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about"><span>Meistä</span></a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#menu"><span>Pizzat</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#gallery"><span>Galleria</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about"><span>Meistä</span></a>
             </li>
 			<li id="käyttäjä_nimi">
 				<p id="nn"> </p>
@@ -77,7 +77,7 @@
 			</form>
 			<form id="rekisteri">
 				<input id="nimi1" type="text" placeholder="Syötä nimesi" value="" />
-				<input id="salasa" type="text" placeholder="Syötä salasana" value="" />
+				<input id="salasa" type="password" placeholder="Syötä salasana" value="" />
 				<input id="submit" type="submit" value="Rekisteröidy" onclick="rekisteröidy2()"/>
 				<input id="takaisin" type="submit" value="Takaisin" onclick="taka()">
 				
@@ -92,7 +92,7 @@
 			</form>
 			<form id="kirjaudu_lomake">
 				<input id="nimi" type="text" placeholder="Syötä nimesi" value="" />
-				<input id="salasana" type="text" placeholder="Syötä salasana" value="" />
+				<input id="salasana" type="password" placeholder="Syötä salasana" value="" />
 				<input id="kirjaudu_nappi" type="submit" value="kirjaudu sisään" onclick="kirja()" />
 				<input id="takaisin" type="submit" value="Takaisin" onclick="taka()">
 				<p id="vaara">Salasana tai nimi väärin</p>
@@ -158,74 +158,6 @@
 		</div>
 		
 	</section>
-
-
-
-    <div id="about" class="section lb">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">                        
-                      <h2>Tervetuloa Ryhmän F pizzeriaan!</h2>
-                      	<p> Olemme pizzeria joka alkoi koulu projektin takia. Meillä kaikki pizza taikinat ovat tehty käsin. Käytämme vain hyvä laatuisia tuotteita pizzoissamme.</p>
-					  	  <p>Vaikka olemme pieni pizzeria voin taata pizzojemme maun</p>
-					  		<ul>
-							  <li>Työn tekijöidemme määrä on 4.</li>
-							  <li>Nimemme tulee ryhmän nimestä.</li>
-							  <li>Myymme kahdeksaa eri pitsaa.</li>
-							  <li>Käytämme vain suomessa tuotettuja raaka-aineita.</li>
-							  <li>Pizzojen tekoon käytämme oonia.</li>
-							  <li>Myymme laatu pizzaa.</li>
-							  <li>Olemme suomen top 1 pizzeria.</li>
-							  <li>Meillä on Suomessa tällä hetkellä 50 pizzeriaa.</li>
-					  		</ul>
-                     <!-- <a href="#foot" class="sim-btn hvr-radial-in js-scroll-trigger"><span>Meidän yhteistiedot</span></a> -->
-                    </div><!-- end messagebox -->
-                </div><!-- end col -->
-
-                <div class="col-md-6">
-                    <div class="right-box-pro wow fadeIn">
-                        <img src="uploads/about_01.png" alt="" class="img-fluid img-rounded">
-                    </div><!-- end media -->
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
-	
-	<div class="section cont-box">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-3 col-sm-6 col-xs-12">
-					<div class="inner-cont-box">
-						<i class="flaticon-review"></i>
-						<h3 class="counter-number">5000</h3>
-						<h4>Asiakkaat</h4>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-xs-12">
-					<div class="inner-cont-box">
-						<i class="flaticon-alarm-clock"></i>
-						<h3 class="counter-number">3000</h3>
-						<h4>Työn aika</h4>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-xs-12">
-					<div class="inner-cont-box">
-						<i class="flaticon-idea"></i>
-						<h3 class="counter-number">2000</h3>
-						<h4>Ideoita</h4>
-					</div>
-				</div>
-				<div class="col-lg-3 col-sm-6 col-xs-12">
-					<div class="inner-cont-box">
-						<i class="flaticon-projector-screen"></i>
-						<h3 class="counter-number">8000</h3>
-						<h4>Projekteja tehty</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	
     <div id="menu" class="section lb">
         <div class="container-fluid">
@@ -417,7 +349,71 @@
 			</div>
 		</div>
 	</div>
+	<div id="about" class="section lb">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="message-box">                        
+                      <h2>Tervetuloa Ryhmän F pizzeriaan!</h2>
+                      	<p> Olemme pizzeria joka alkoi koulu projektin takia. Meillä kaikki pizza taikinat ovat tehty käsin. Käytämme vain hyvä laatuisia tuotteita pizzoissamme.</p>
+					  	  <p>Vaikka olemme pieni pizzeria voin taata pizzojemme maun</p>
+					  		<ul>
+							  <li>Työn tekijöidemme määrä on 4.</li>
+							  <li>Nimemme tulee ryhmän nimestä.</li>
+							  <li>Myymme kahdeksaa eri pitsaa.</li>
+							  <li>Käytämme vain suomessa tuotettuja raaka-aineita.</li>
+							  <li>Pizzojen tekoon käytämme oonia.</li>
+							  <li>Myymme laatu pizzaa.</li>
+							  <li>Olemme suomen top 1 pizzeria.</li>
+							  <li>Meillä on Suomessa tällä hetkellä 50 pizzeriaa.</li>
+					  		</ul>
+                     <!-- <a href="#foot" class="sim-btn hvr-radial-in js-scroll-trigger"><span>Meidän yhteistiedot</span></a> -->
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn">
+                        <img src="uploads/about_01.png" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
 	
+	<div class="section cont-box">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="inner-cont-box">
+						<i class="flaticon-review"></i>
+						<h3 class="counter-number">5000</h3>
+						<h4>Asiakkaat</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="inner-cont-box">
+						<i class="flaticon-alarm-clock"></i>
+						<h3 class="counter-number">3000</h3>
+						<h4>Työn aika</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="inner-cont-box">
+						<i class="flaticon-idea"></i>
+						<h3 class="counter-number">2000</h3>
+						<h4>Ideoita</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-xs-12">
+					<div class="inner-cont-box">
+						<i class="flaticon-projector-screen"></i>
+						<h3 class="counter-number">8000</h3>
+						<h4>Projekteja tehty</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--<footer id="foot" class="main-footer">
 		<div class="container">
 			<div class="row">
